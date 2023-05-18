@@ -7,6 +7,7 @@ public class InputManager : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("InputManager started");
         touchControls = new TouchControls();
     }
 
