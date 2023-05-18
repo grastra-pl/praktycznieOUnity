@@ -5,11 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/lastSpaceshipGame.unity
     guid: ef52ff6180964b741bc6535f39fff819
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 64b797ed35808604e8bf572ff61d641d, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: f83cb361e7a42ae458d31e54ad0ebb5f, type: 2}
