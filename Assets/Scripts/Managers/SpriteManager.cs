@@ -6,12 +6,19 @@ public class SpriteManager : MonoBehaviour
 {
     public Sprite[] SpaceshipSprites;
 
-    public static SpriteManager instance;
+    public static SpriteManager Instance { get; private set; }
 
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
-        SpaceshipSprites = Resources.LoadAll<Sprite>("Images/SpaceshipKit");
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+            SpaceshipSprites = Resources.LoadAll<Sprite>("Images/SpaceshipKit");
+            Debug.Log("SpriteManager started");
+        }
     }
 }
