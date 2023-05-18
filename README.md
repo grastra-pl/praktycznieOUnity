@@ -3,8 +3,10 @@ Praktycznie o Unity - podstawowy projekt i pojęcia związane z programowaniem w
 
 ## Jak korzystać z tego repo
 
-1. Ściągnąć do jakiegoś folderu u siebie (git clone)
-2. Dodać w Unity Hubie jako nowy projekt
+1. Ściągnąć do jakiegoś folderu u siebie (`git clone git@github.com:grastra-pl/praktycznieOUnity.git`)
+![image](https://github.com/grastra-pl/praktycznieOUnity/assets/14235397/3d334795-a800-4fc0-81d0-10434d6ca839)
+
+3. Dodać w Unity Hubie jako nowy projekt
 
 ## MonoBehaviour
 
