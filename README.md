@@ -6,7 +6,8 @@ Praktycznie o Unity - podstawowy projekt i pojęcia związane z programowaniem w
 1. Ściągnąć do jakiegoś folderu u siebie (`git clone git@github.com:grastra-pl/praktycznieOUnity.git`)
 ![image](https://github.com/grastra-pl/praktycznieOUnity/assets/14235397/3d334795-a800-4fc0-81d0-10434d6ca839)
 
-3. Dodać w Unity Hubie jako nowy projekt
+2. Dodać w Unity Hubie jako nowy projekt
+![image](https://github.com/grastra-pl/praktycznieOUnity/assets/14235397/ae170522-5f59-439a-b710-7005eb70d940)
 
 ## MonoBehaviour
 
