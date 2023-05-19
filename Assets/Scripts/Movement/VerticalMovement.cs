@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingUp : MonoBehaviour
+public class VerticalMovement : MonoBehaviour
 {
-    public float speed = 4.0f;
+    public float Speed = 4.0f;
 
     void Update()
     {
         Vector3 position = this.gameObject.transform.position;
-        position.y += Time.deltaTime * speed;
+        position.y += Time.deltaTime * Speed;
         this.gameObject.transform.position = position;
     }
 }

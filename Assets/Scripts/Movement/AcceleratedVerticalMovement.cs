@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingRight : MonoBehaviour
+public class AcceleratedVerticalMovement : MonoBehaviour
 {
-    public float speed = 2.0f;
+    public float Acceleration = -2.0f;
+    public float Speed = 0.0f;
 
     void Update()
     {
+        Speed += Time.deltaTime * Acceleration;
         Vector3 position = this.gameObject.transform.position;
-        position.x += Time.deltaTime * speed;
+        position.y += Time.deltaTime * Speed;
         this.gameObject.transform.position = position;
     }
 }
