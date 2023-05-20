@@ -154,9 +154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff159d79cbd5924439cfd760e3795699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpaceshipSprites: []
-  BackgroundSprite: {fileID: 0}
-  SplashScreenSprite: {fileID: 0}
 --- !u!4 &364668136
 Transform:
   m_ObjectHideFlags: 0
@@ -184,9 +181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff159d79cbd5924439cfd760e3795699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpaceshipSprites: []
-  BackgroundSprite: {fileID: 0}
-  SplashScreenSprite: {fileID: 0}
 --- !u!114 &364668138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,7 +368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324041160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -0.07, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -542,7 +536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095716177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -3.82, z: 0}
+  m_LocalPosition: {x: 0, y: -3.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -566,11 +560,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4192832948464013967, guid: 26bfe91afa841aa4fb8bb83d09fa465e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.72
+      value: 7.77
       objectReference: {fileID: 0}
     - target: {fileID: 4192832948464013967, guid: 26bfe91afa841aa4fb8bb83d09fa465e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.91
+      value: -4.24
       objectReference: {fileID: 0}
     - target: {fileID: 4192832948464013967, guid: 26bfe91afa841aa4fb8bb83d09fa465e, type: 3}
       propertyPath: m_LocalPosition.z
