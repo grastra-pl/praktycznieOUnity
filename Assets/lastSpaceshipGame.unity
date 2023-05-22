@@ -215,6 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c100a12e3c7f0114cb5a47e511491d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bomber: {fileID: 915899725}
 --- !u!61 &489492326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -239,7 +240,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2, y: 2}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!50 &489492327
 Rigidbody2D:
@@ -721,6 +722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2095716179}
   - component: {fileID: 2095716178}
+  - component: {fileID: 2095716180}
   m_Layer: 0
   m_Name: PlayerP
   m_TagString: Untagged
@@ -795,6 +797,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2095716180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095716177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddbc68be91a1fbd4589d95a52007e530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RocketPrefab: {fileID: 268748551650463960, guid: a85a813e42aefb143beb005820981d4c, type: 3}
+  BulletsLeft: 1
+  FireDelay: 1
 --- !u!1001 &4192832949183676119
 PrefabInstance:
   m_ObjectHideFlags: 0
