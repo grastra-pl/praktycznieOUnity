@@ -1,14 +1,18 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class InputManager : MonoBehaviour
+[DefaultExecutionOrder(-1)]
+public class InputManager : Singleton<InputManager>
 {
     public delegate void StartTouchEvent(Vector2 position, float time);
     public event StartTouchEvent OnStartTouch;
     public delegate void EndTouchEvent(Vector2 position, float time);
     public event StartTouchEvent OnEndTouch;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     private TouchControls touchControls;
 
     private void Awake()
@@ -38,7 +42,10 @@ public class InputManager : MonoBehaviour
     {
         if (OnStartTouch != null)
         {
+<<<<<<< HEAD
             Debug.Log("Touch");
+=======
+>>>>>>> master
             OnStartTouch(touchControls.Touch.TouchPosition.ReadValue<Vector2>(), (float)context.startTime);
         }
     }
@@ -47,7 +54,10 @@ public class InputManager : MonoBehaviour
     {
         if (OnEndTouch != null)
         {
+<<<<<<< HEAD
             Debug.Log("Touch");
+=======
+>>>>>>> master
             OnEndTouch(touchControls.Touch.TouchPosition.ReadValue<Vector2>(), (float)context.time);
         }
     }
