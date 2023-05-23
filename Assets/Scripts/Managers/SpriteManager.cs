@@ -5,31 +5,48 @@ using UnityEngine;
 public class SpriteManager : MonoBehaviour
 {
     [HideInInspector]
-    public Sprite[] SpaceshipSprites;
+    static Sprite[] _spaceshipSprites;
 
     [HideInInspector]
-    public Sprite BackgroundSprite;
+    static Sprite _backgroundSprite;
 
     [HideInInspector]
-    public Sprite SplashScreenSprite;
+    static Sprite _splashScreenSprite;
 
-
-    public static SpriteManager Instance { get; private set; }
-
-    private void Awake()
+    public static Sprite SplashScreenSprite
     {
-        if (Instance != null && Instance != this)
+        get
         {
-            Destroy(this);
-        }
-        else
-        {
-            Instance = this;
-            SpaceshipSprites = Resources.LoadAll<Sprite>("Images/real/SpaceshipKit");
-            BackgroundSprite = Resources.Load<Sprite>("Images/real/Planet");
-            SplashScreenSprite = Resources.Load<Sprite>("Images/real/LastBullet");
-
-            Debug.Log("SpriteManager started");
+            if (_splashScreenSprite == null)
+            {
+                SpriteManager._splashScreenSprite = Resources.Load<Sprite>("Images/real/LastBullet");
+            }
+            return _splashScreenSprite;
         }
     }
+
+    public static Sprite BackgroundSprite
+    {
+        get
+        {
+            if (_backgroundSprite == null)
+            {
+                SpriteManager._backgroundSprite = Resources.Load<Sprite>("Images/real/PlanetOne");
+            }
+            return _backgroundSprite;
+        }
+    }
+
+    public static Sprite[] SpaceshipSprites
+    {
+        get
+        {
+            if (_spaceshipSprites == null)
+            {
+                SpriteManager._spaceshipSprites = Resources.LoadAll<Sprite>("Images/real/SpaceshipKit");
+            }
+            return _spaceshipSprites;
+        }
+    }
+   
 }
