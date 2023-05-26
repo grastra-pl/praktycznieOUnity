@@ -34,7 +34,8 @@ public class RocketControl : MonoBehaviour
         {
             BulletsLeft--;
             lastFireTime = time;
-            Instantiate(RocketPrefab, gameObject.transform);
+            GameObject rocket = Instantiate(RocketPrefab, transform.position, Quaternion.identity);
+        rocket.transform.localScale = RocketPrefab.transform.localScale;
         }
     }
 }

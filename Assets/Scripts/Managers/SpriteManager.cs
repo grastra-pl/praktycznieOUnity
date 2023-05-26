@@ -31,7 +31,7 @@ public class SpriteManager : MonoBehaviour
         {
             if (_backgroundSprite == null)
             {
-                SpriteManager._backgroundSprite = Resources.Load<Sprite>("Images/real/PlanetOne");
+                SpriteManager._backgroundSprite = Resources.Load<Sprite>("Images/real/space");
             }
             return _backgroundSprite;
         }

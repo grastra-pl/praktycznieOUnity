@@ -9,6 +9,6 @@ public class BackgroundApplier : MonoBehaviour
         SpriteRenderer spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = SpriteManager.BackgroundSprite;
         float width = ScreenSize.GetScreenToWorldHeight;
-        transform.localScale = Vector3.one * 0.175f * width;
+        transform.localScale = Vector3.one * 0.2f * width;
     }
 }

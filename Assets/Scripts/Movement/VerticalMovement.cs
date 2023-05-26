@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VerticalMovement : MonoBehaviour
 {
-    public float Speed = 4.0f;
+    public float Speed = 2.0f;
 
     void Update()
     {
